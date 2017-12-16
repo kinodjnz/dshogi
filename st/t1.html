@@ -1,0 +1,94 @@
+<html lang="ja-JP">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>どうぶつしょうぎ</title>
+	<style type="text/css">
+	  <!--
+		  table {
+		    border-collapse: separate;
+			border-spacing: 0px;
+			border: 1px solid gray;
+			padding: 0px;
+			margin: 0px;
+		  }
+		  table tr td {
+		    background: url(empty.png);
+			width: 40px;
+			height: 46px;
+			border: 2px solid white;
+		  }
+		  #cursor {
+		    position: absolute;
+			background: url(empty.png);
+			width: 40px;
+			height: 41px;
+			display: none;
+		  }
+		  .spacer {
+		    height: 12px;
+		  }
+		-->
+	</style>
+	<script src="jquery-1.7.1.min.js"></script>
+	<script src="t1.js"></script>
+  </head>
+  <body>
+	<div>持ち駒</div>
+	<table id="hands2">
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	</table>
+	<div class="spacer"></div>
+	<table id="board">
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	</table>
+	<div class="spacer"></div>
+	<div>持ち駒</div>
+	<table id="hands">
+	  <tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	</table>
+	<div>
+	  <input type="text" id="board_id" value="" />
+	  <label><input type="checkbox" id="board_flipx" />左右反転</label>
+	  <input type="button" id="decode" value="盤面に反映" />
+	</div>
+	<input type="button" id="next" value="コンピュータの手" />
+	<input type="button" id="test" value="テスト" />
+  </body>
+</html>
